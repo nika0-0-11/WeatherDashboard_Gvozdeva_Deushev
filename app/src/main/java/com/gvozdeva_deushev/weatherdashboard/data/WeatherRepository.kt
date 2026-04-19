@@ -10,7 +10,7 @@ class WeatherRepository {
         return Random.nextInt(15, 35)
     }
 
-    suspend fun fetchHumifity(): Int {
+    suspend fun fetchHumidity(): Int {
         delay(1500)
         return Random.nextInt(40, 80)
     }
