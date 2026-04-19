@@ -28,7 +28,7 @@ class WeatherViewModel : ViewModel() {
                 val temperature = repository.fetchTemperature()
                 _weatherState.value = _weatherState.value.copy(temperature = temperature)
                 val humidity = repository.fetchHumidity()
-                _weatherState.value = _weatherState.value.copy(humifity = humidity)
+                _weatherState.value = _weatherState.value.copy(humidity = humidity)
                 val windSpeed = repository.fetchWindSpeed()
                 _weatherState.value = _weatherState.value.copy(windSpeed = windSpeed)
 
